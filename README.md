@@ -7,4 +7,5 @@ An event-driven application that consists of AWS EventBridge, AWS Lambda and AWS
 * [Overview](#overview)
 
 ### Overview 
-Todo...
+
+![](resources/freya-overview.png)
