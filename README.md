@@ -20,23 +20,23 @@ An event-driven application that consists of AWS EventBridge, AWS Lambda, AWS Cl
   * [Initial Dependencies](#initial-dependencies)
 * [Sources](#sources)
 
-### Overview 
+## Overview 
 
 ![](resources/freya-overview.png)
 
-### Components
+## Components
 todo...
 
-#### AWS Lambda
+### AWS Lambda
 todo...
 
-#### AWS CloudWatch
+### AWS CloudWatch
 todo...
 
-#### AWS EventBridge
+### AWS EventBridge
 todo...
 
-#### AWS S3
+### AWS S3
 todo...
 
 ## Infrastructure
@@ -102,13 +102,13 @@ terraform validate
 terraform plan
 ```
 
-### CI/CD
-#### Jenkins
-#### Deployment
+## CI/CD
+### Jenkins
+### Deployment
 
-### Local Development
+## Local Development
 
-#### Initial Dependencies
+### Initial Dependencies
 Install initial dependencies required for local development by running `scripts/install-dependencies.sh`
 ```shell
 # If you're using MacOS
@@ -117,7 +117,6 @@ Install initial dependencies required for local development by running `scripts/
 # If you're using Ubuntu
 ./install-dependencies.sh --ubuntu
 ```
-
 
 ### Sources
 
