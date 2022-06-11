@@ -39,15 +39,16 @@ todo...
 #### AWS S3
 todo...
 
-### Infrastructure
+## Infrastructure
 todo... (iac)
 
-#### Terraform
+### Terraform
 
 The AWS provider is used to interact with resources supported by AWS. The provider
 is configured with the proper credentials before usage. The configuration for the AWS
 provider is derived from Environment variables or using Shared Configuration and Credentials Files
 
+#### AWS Credentials
 **Shared Configuration and Credentials Files**<br>
 The AWS CLI stores sensitive credential information that you specify with `aws configure` in a local
 file named `credentials`, in a folder named `.aws` in the home directory.
@@ -88,6 +89,19 @@ $ export AWS_ACCESS_KEY_ID="some-access-key"
 $ export AWS_SECRET_ACCESS_KEY="some-secret-access-key"
 ```
 
+#### Applying Infrastructure locally
+
+```shell
+# Initialize a working directory containing Terraform configuration files
+terraform init
+
+# Validate the configuration files
+terraform validate 
+
+# Preview the changes that Terraform plans to make
+terraform plan
+```
+
 ### CI/CD
 #### Jenkins
 #### Deployment
@@ -103,6 +117,7 @@ Install initial dependencies required for local development by running `scripts/
 # If you're using Ubuntu
 ./install-dependencies.sh --ubuntu
 ```
+
 
 ### Sources
 
