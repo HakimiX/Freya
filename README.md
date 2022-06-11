@@ -40,9 +40,35 @@ todo...
 ### Infrastructure
 #### Terraform
 
+The AWS provider is used to interact with resources supported by AWS. The provider
+is configured with the proper credentials before usage. The configuration for the AWS
+provider is derived from Environment variables. 
+
+Credentials are provided by using the `AWS_ACCESS_KEY_ID`, and `AWS_SECRET_ACCESS_KEY` environment variables.
+For example:
+```terraform
+provider "aws" {
+  region = "eu-west-1"
+}
+```
+```shell
+$ export AWS_ACCESS_KEY_ID="some-access-key"
+$ export AWS_SECRET_ACCESS_KEY="some-secret-access-key"
+```
+
+
 ### CI/CD
 #### Jenkins
 #### Deployment
 
 ### Local Development
-todo...
+
+#### Initial Dependencies
+Install initial dependencies required for local development by running the `scripts/install-dependencies.sh` script
+```shell
+# If you're using MacOS
+./install-dependencies.sh --mac
+
+# If you're using Ubuntu
+./install-dependencies.sh --ubuntu
+```
