@@ -1,6 +1,6 @@
 # Freya 
 
-An event-driven application that consists of AWS EventBridge, AWS Lambda and AWS S3. 
+An event-driven application that consists of AWS EventBridge, AWS Lambda, AWS CloudWatch, and AWS S3. 
 
 **Technologies**: Clojure, Terraform, Jenkins, and AWS. <br> 
 **Versions**: Leiningen 2.9.8, Java 1.8.0 _(Coretto 8)_, Terraform: v0.13, Jenkins JVM on Java 11 _(jdk11)_
