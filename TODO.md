@@ -2,5 +2,5 @@
 
 * [x] Create architecture overview model using Figma
 * [ ] Implement Lambda function logic
-  * [ ] Setup Clojure project
+  * [x] Setup freya-lambda component structure
   * [ ] Implement handler function
