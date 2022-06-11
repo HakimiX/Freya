@@ -3,7 +3,7 @@
 An event-driven application that consists of AWS EventBridge, AWS Lambda, AWS CloudWatch, and AWS S3. 
 
 **Technologies**: Clojure, Terraform, Jenkins, and AWS. <br> 
-**Versions**: Leiningen 2.9.8, Java 1.8.0 _(Coretto 8)_, Terraform v1.2.2, Jenkins JVM on Java 11 _(jdk11)_
+**Versions**: Leiningen 2.9.8, Java 1.8.0 _(Corretto 8)_, Terraform v1.2.2, Jenkins JVM on Java 11 _(jdk11)_
 
 * [Overview](#overview)
 * [Components](#components)
