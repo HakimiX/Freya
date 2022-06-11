@@ -70,9 +70,7 @@ The Terraform AWS provider can source credentials from the `~/.aws` directory. I
 is specified, the `default` profile is used. 
 ```terraform
 provider "aws" {
-  shared_config_files      = ["/Users/tf_user/.aws/conf"]
-  shared_credentials_files = ["/Users/tf_user/.aws/creds"]
-  profile                  = "customprofile" # only if you custom aws profile is used
+  region = "eu-west-1"
 }
 ```
 
@@ -100,6 +98,12 @@ terraform validate
 
 # Preview the changes that Terraform plans to make
 terraform plan
+
+# Apply changes
+terraform apply
+
+# Destroy infrastructure
+terraform destroy
 ```
 
 ## CI/CD
