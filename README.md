@@ -64,7 +64,7 @@ $ export AWS_SECRET_ACCESS_KEY="some-secret-access-key"
 ### Local Development
 
 #### Initial Dependencies
-Install initial dependencies required for local development by running the `scripts/install-dependencies.sh` script
+Install initial dependencies required for local development by running `scripts/install-dependencies.sh`
 ```shell
 # If you're using MacOS
 ./install-dependencies.sh --mac
