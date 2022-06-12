@@ -18,4 +18,6 @@ Terraform will instruct AWS to deploy the Lambda code from the s3 object.
 
 #### Manually Deploying Code
 You can deploy code manually using the AWS CLI or through the AWS Console. 
-Simply navigate to the Lambda function and 
+Simply navigate to the Lambda function → Code → Code source → Upload From 
+
+![](../resources/manually-upload-lambda-code.png)
