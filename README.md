@@ -106,6 +106,8 @@ terraform apply
 terraform destroy
 ```
 
+Comprehensive documentation of the infrastructure is located [here](freya-infrastructure/README.md)
+
 ## CI/CD
 ### Jenkins
 ### Deployment
