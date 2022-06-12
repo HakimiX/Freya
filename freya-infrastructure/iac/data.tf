@@ -8,3 +8,17 @@ data "aws_iam_policy_document" "AWSLambdaTrustPolicy" {
     }
   }
 }
+
+data "aws_iam_policy_document" "AWSS3TrustPolicy" {
+  statement {
+    actions   = ["s3:ListObject"]
+    effect    = "Allow"
+    resources = ["arn:aws:s3:::${aws_s3_bucket.freya_lambda_bucket.arn}"] # TODO
+  }
+
+  statement {
+    actions   = ["s3:*Object"]
+    effect    = "Allow"
+    resources = ["arn:aws:s3:::${aws_s3_bucket.freya_lambda_bucket.arn}/*"] # TODO
+  }
+}
