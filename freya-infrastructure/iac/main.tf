@@ -21,6 +21,6 @@ resource "aws_s3_bucket" "freya_lambda_bucket" {
 resource "aws_s3_bucket_object" "freya_lambda_bucket_object" {
   bucket     = aws_s3_bucket.freya_lambda_bucket.id
   key        = "freya-lambda-0.1.0-SNAPSHOT-standalone.jar"
-  source     = "../../freya-lambda/target/uberjar/freya-lambda-0.1.0-SNAPSHOT-standalone.jar" # must be present
+  source     = "../../freya-lambda/target/uberjar/freya-lambda-0.1.0-SNAPSHOT-standalone.jar"
   depends_on = [aws_s3_bucket.freya_lambda_bucket]
 }
