@@ -1,4 +1,5 @@
 (ns freya-lambda.aws.s3
+  "General AWS S3 functionality"
   (:require [freya-lambda.util :as util])
   (:import (com.amazonaws.services.s3 AmazonS3ClientBuilder)
            (com.amazonaws.services.s3.model GetObjectRequest ObjectMetadata PutObjectRequest)))
