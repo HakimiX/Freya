@@ -7,12 +7,13 @@ An event-driven application that consists of AWS EventBridge, AWS Lambda, AWS Cl
 
 * [Overview](#overview)
 * [Components](#components)
-  * [AWS Lambda](#aws-lambda)
-  * [AWS CloudWatch](#aws-cloudwatch)
-  * [AWS EventBridge](#aws-eventbridge)
-  * [AWS S3](#aws-s3)
 * [Infrastructure](#infrastructure)
   * [Terraform](#terraform)
+  * [AWS](#aws)
+    * [AWS Lambda](#aws-lambda)
+    * [AWS CloudWatch](#aws-cloudwatch)
+    * [AWS EventBridge](#aws-eventbridge)
+    * [AWS S3](#aws-s3)
 * [CI/CD](#cicd)
   * [Jenkins](#jenkins)
   * [Deployment](#deployment)
@@ -25,18 +26,6 @@ An event-driven application that consists of AWS EventBridge, AWS Lambda, AWS Cl
 ![](resources/freya-overview.png)
 
 ## Components
-todo...
-
-### AWS Lambda
-todo...
-
-### AWS CloudWatch
-todo...
-
-### AWS EventBridge
-todo...
-
-### AWS S3
 todo...
 
 ## Infrastructure
@@ -105,6 +94,19 @@ terraform apply
 # Destroy infrastructure
 terraform destroy
 ```
+
+### AWS
+#### AWS Lambda
+todo...
+
+#### AWS CloudWatch
+todo...
+
+#### AWS EventBridge
+todo...
+
+#### AWS S3
+todo...
 
 Comprehensive documentation of the infrastructure is located [here](freya-infrastructure/README.md)
 
