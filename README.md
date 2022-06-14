@@ -9,6 +9,12 @@ An event-driven application that consists of AWS EventBridge, AWS Lambda, AWS Cl
 * [Components](#components)
 * [Infrastructure](#infrastructure)
   * [Terraform](#terraform)
+  * [AWS](#aws)
+    * [AWS Lambda](#aws-lambda)
+    * [AWS CloudWatch](#aws-cloudwatch)
+    * [AWS EventBridge](#aws-eventbridge)
+    * [AWS S3](#aws-s3)
+    * [AWS CLI](#aws-cli)
 * [CI/CD](#cicd)
   * [Jenkins](#jenkins)
   * [Deployment](#deployment)
@@ -27,16 +33,85 @@ todo...
 todo... (iac)
 
 ### Terraform
-Todo...
+
+The AWS provider is used to interact with resources supported by AWS. The provider
+is configured with the proper credentials before usage. The configuration for the AWS
+provider is derived from Environment variables or using Shared Configuration and Credentials Files
+
+#### AWS Credentials
+**Shared Configuration and Credentials Files**<br>
+The AWS CLI stores sensitive credential information that you specify with `aws configure` in a local
+file named `credentials`, in a folder named `.aws` in the home directory.
+
+`~/.aws/credentials`
+```shell
+[default]
+aws_access_key_id = <some-access-key>
+aws_secret_access_key = <some-secret-access-key>
+```
+`~/.aws/config`
+```shell
+[default]
+region = us-west-2
+output = json
+```
+
+The Terraform AWS provider can source credentials from the `~/.aws` directory. If no named profile
+is specified, the `default` profile is used. 
+```terraform
+provider "aws" {
+  region = "eu-west-1"
+}
+```
+
+**Environment Variables**<br>
+Credentials can also be provided by using the `AWS_ACCESS_KEY_ID`, and `AWS_SECRET_ACCESS_KEY` environment variables.
+For example:
+```terraform
+provider "aws" {
+  region = "eu-west-1"
+}
+```
+```shell
+$ export AWS_ACCESS_KEY_ID="some-access-key"
+$ export AWS_SECRET_ACCESS_KEY="some-secret-access-key"
+```
+
+#### Applying Infrastructure locally
+
+```shell
+# Initialize a working directory containing Terraform configuration files
+terraform init
+
+# Validate the configuration files
+terraform validate 
+
+# Preview the changes that Terraform plans to make
+terraform plan
+
+# Apply changes
+terraform apply
+
+# Destroy infrastructure
+terraform destroy
+```
+
+### AWS
+#### AWS Lambda
+todo...
+
+#### AWS CloudWatch
+todo...
+
+#### AWS EventBridge
+todo...
+
+#### AWS S3
+todo...
+
 Comprehensive documentation of the infrastructure is located [here](freya-infrastructure/README.md)
 
 ### AWS CLI
-```shell
-# Update Lambda function code
-aws lambda update-function-code \
-  --function-name <lambda-function> \
-  --zip-file fileb://<zip-file>.zip
-```
 
 ## CI/CD
 ### Jenkins
