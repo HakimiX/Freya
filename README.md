@@ -33,38 +33,7 @@ todo...
 todo... (iac)
 
 ### Terraform
-#### Applying Infrastructure locally
-
-```shell
-# Initialize a working directory containing Terraform configuration files
-terraform init
-
-# Validate the configuration files
-terraform validate 
-
-# Preview the changes that Terraform plans to make
-terraform plan
-
-# Apply changes
-terraform apply
-
-# Destroy infrastructure
-terraform destroy
-```
-
-### AWS
-#### AWS Lambda
 todo...
-
-#### AWS CloudWatch
-todo...
-
-#### AWS EventBridge
-todo...
-
-#### AWS S3
-todo...
-
 Comprehensive documentation of the infrastructure is located [here](freya-infrastructure/README.md)
 
 ### AWS CLI
