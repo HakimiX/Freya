@@ -3,6 +3,7 @@
 * [AWS Credentials](#aws-credentials)
   * [Shared Configuration and Credentials Files](#shared-configuration-and-credentials-files)
   * [Environment Variables](#environment-variables)
+* [Applying Infrastructure locally](#applying-infrastructure-locally)
 * [Lambda](#lambda)
   * [Automatically Deploying Code](#automatically-deploying-code)
   * [Manually Deploying Code](#manually-deploying-code)
@@ -67,3 +68,22 @@ You can deploy code manually using the AWS CLI or through the AWS Console.
 Simply navigate to the Lambda function → Code → Code source → Upload From 
 
 ![](../resources/manually-upload-lambda-code.png)
+
+#### Applying Infrastructure locally
+
+```shell
+# Initialize a working directory containing Terraform configuration files
+terraform init
+
+# Validate the configuration files
+terraform validate 
+
+# Preview the changes that Terraform plans to make
+terraform plan
+
+# Apply changes
+terraform apply
+
+# Destroy infrastructure
+terraform destroy
+```
