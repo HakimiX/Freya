@@ -9,12 +9,6 @@ An event-driven application that consists of AWS EventBridge, AWS Lambda, AWS Cl
 * [Components](#components)
 * [Infrastructure](#infrastructure)
   * [Terraform](#terraform)
-  * [AWS](#aws)
-    * [AWS Lambda](#aws-lambda)
-    * [AWS CloudWatch](#aws-cloudwatch)
-    * [AWS EventBridge](#aws-eventbridge)
-    * [AWS S3](#aws-s3)
-    * [AWS CLI](#aws-cli)
 * [CI/CD](#cicd)
   * [Jenkins](#jenkins)
   * [Deployment](#deployment)
@@ -35,8 +29,6 @@ todo... (iac)
 ### Terraform
 todo...
 Comprehensive documentation of the infrastructure is located [here](freya-infrastructure/README.md)
-
-### AWS CLI
 
 ## CI/CD
 ### Jenkins
