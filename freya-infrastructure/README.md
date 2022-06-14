@@ -10,6 +10,11 @@
 
 
 ### AWS Credentials
+The AWS provider is used to interact with resources supported by AWS. The provider
+is configured with the proper credentials before usage. The configuration for the AWS
+provider is derived from Environment variables or using Shared Configuration and Credentials Files
+
+
 #### Shared Configuration and Credentials Files
 The AWS CLI stores sensitive credential information that you specify with `aws configure` in a local
 file named `credentials`, in a folder named `.aws` in the home directory.
