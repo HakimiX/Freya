@@ -112,6 +112,12 @@ todo...
 Comprehensive documentation of the infrastructure is located [here](freya-infrastructure/README.md)
 
 ### AWS CLI
+```shell
+# Update Lambda function code
+aws lambda update-function-code \
+  --function-name <lambda-function> \
+  --zip-file fileb://<zip-file>.zip
+```
 
 ## CI/CD
 ### Jenkins
