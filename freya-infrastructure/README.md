@@ -51,6 +51,15 @@ $ export AWS_ACCESS_KEY_ID="some-access-key"
 $ export AWS_SECRET_ACCESS_KEY="some-secret-access-key"
 ```
 
+### AWS EventBridge
+payload
+```json
+{
+  "type": "fetch-data",
+  "source": "aws.events"
+}
+```
+
 ### Lambda
 #### Automatically Deploying Code
 The configuration inside the AWS Lambda details specifies `s3_bucket` and `s3_key`. These 
