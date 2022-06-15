@@ -7,6 +7,7 @@
   * [x] Store Lambda source code in S3.
   * [x] Deploy Lambda source code from S3 to Lambda function.
   * [x] Implement logging for the Lambda function
+  * [ ] Implement AWS CloudWatch events
   * [ ] Use AWS CLI to update lambda code
 * [ ] Implement Lambda function logic
   * [x] Setup freya-lambda component structure
