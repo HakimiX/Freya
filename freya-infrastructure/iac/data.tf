@@ -22,3 +22,11 @@ data "aws_iam_policy_document" "AWSS3TrustPolicy" {
     resources = ["arn:aws:s3:::${aws_s3_bucket.freya_lambda_bucket.arn}/*"]
   }
 }
+
+data "aws_iam_policy_document" "AWSLambdaLoggingPolicy" {
+  statement {
+    actions   = ["logs:CreateLogStream", "logs:PutLogEvents"]
+    effect    = "Allow"
+    resources = ["arn:aws:logs:*:*:*"]
+  }
+}
