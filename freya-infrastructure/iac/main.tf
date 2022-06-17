@@ -7,6 +7,12 @@ resource "aws_lambda_function" "freya_lambda" {
   handler       = "freya-lambda.lambda.handler"
   memory_size   = "1536"
   depends_on    = [aws_s3_bucket.freya_lambda_bucket]
+
+  environment {
+    variables = {
+      API_ENDPOINT = "https://jsonplaceholder.typicode.com/"
+    }
+  }
 }
 
 resource "aws_s3_bucket" "freya_lambda_bucket" {
