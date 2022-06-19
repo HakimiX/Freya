@@ -8,7 +8,7 @@
   * [x] Deploy Lambda source code from S3 to Lambda function.
   * [x] Implement logging for the Lambda function
   * [x] Implement AWS CloudWatch events
-  * [ ] Implement AWS Lambda environment variables
+  * [x] Implement AWS Lambda environment variables
   * [ ] Use AWS CLI to update lambda code
 * [ ] Implement Lambda function logic
   * [x] Setup freya-lambda component structure
