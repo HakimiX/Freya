@@ -9,6 +9,10 @@ data "aws_iam_policy_document" "AWSLambdaTrustPolicy" {
   }
 }
 
+# ---------------------------
+# AWS S3 Policies
+# ---------------------------
+
 data "aws_iam_policy_document" "AWSS3TrustPolicy" {
   statement {
     actions   = ["s3:ListObject"]
@@ -22,6 +26,10 @@ data "aws_iam_policy_document" "AWSS3TrustPolicy" {
     resources = ["arn:aws:s3:::${aws_s3_bucket.freya_lambda_bucket.arn}/*"]
   }
 }
+
+# ---------------------------
+# AWS CloudWatch policies
+# ---------------------------
 
 data "aws_iam_policy_document" "AWSLambdaLoggingPolicy" {
   statement {

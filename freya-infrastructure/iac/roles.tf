@@ -8,6 +8,10 @@ resource "aws_iam_role_policy_attachment" "freya_lambda_policy" {
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 }
 
+# ---------------------------
+# AWS IAM S3 roles
+# ---------------------------
+
 resource "aws_iam_policy" "freya_bucket_policy" {
   name   = "freya-bucket-policy"
   policy = data.aws_iam_policy_document.AWSS3TrustPolicy.json

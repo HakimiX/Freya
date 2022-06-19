@@ -15,6 +15,10 @@ resource "aws_lambda_function" "freya_lambda" {
   }
 }
 
+# ---------------------------
+# AWS S3 Buckets
+# ---------------------------
+
 resource "aws_s3_bucket" "freya_lambda_bucket" {
   bucket = "freya-lambda-bucket"
 
