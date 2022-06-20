@@ -36,7 +36,7 @@ resource "aws_s3_bucket_object" "freya_lambda_bucket_object" {
 }
 
 resource "aws_s3_bucket" "freya_data_bucket" {
-  bucket = "event-data-bucket"
+  bucket = "freya-data-bucket"
 
   tags = {
     Name        = "freya data bucket"
