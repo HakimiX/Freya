@@ -35,11 +35,11 @@ resource "aws_s3_bucket_object" "freya_lambda_bucket_object" {
   depends_on = [aws_s3_bucket.freya_lambda_bucket]
 }
 
-resource "aws_s3_bucket" "event-data_bucket" {
+resource "aws_s3_bucket" "freya_data_bucket" {
   bucket = "event-data-bucket"
 
   tags = {
-    Name        = "event dat abucket"
+    Name        = "freya data bucket"
     Environment = "Dev"
   }
 }
