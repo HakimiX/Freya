@@ -35,6 +35,15 @@ resource "aws_s3_bucket_object" "freya_lambda_bucket_object" {
   depends_on = [aws_s3_bucket.freya_lambda_bucket]
 }
 
+resource "aws_s3_bucket" "event-data_bucket" {
+  bucket = "event-data-bucket"
+
+  tags = {
+    Name        = "event dat abucket"
+    Environment = "Dev"
+  }
+}
+
 /*resource "aws_cloudwatch_log_group" "function_log_group" {
   name              = "/aws/lambda/${aws_lambda_function.freya_lambda.function_name}"
   retention_in_days = 1
