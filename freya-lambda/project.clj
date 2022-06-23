@@ -6,8 +6,8 @@
                  [org.clojure/tools.logging "1.2.4"]
 
                  ;; AWS Libraries
-                 [com.amazonaws/aws-java-sdk-s3 "1.12.237"]
-                 [com.amazonaws/aws-java-sdk-lambda "1.11.1000"]
+                 [com.amazonaws/aws-java-sdk-s3 "1.12.239"]
+                 [com.amazonaws/aws-java-sdk-lambda "1.12.239"]
 
                  [uswitch/lambada "0.1.2"]]
   :main ^:skip-aot freya-lambda.core
